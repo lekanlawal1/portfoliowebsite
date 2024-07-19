@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lekan's Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e88167db6f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/latest lekan logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p> Computer Science Student</p>
+                <h1>Hey, I'm<span> Lekan.</span><br> Welcome to my Website!!</h1>
+            </div>
+        </div>
+    </div>
+    <!------------about------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/hello.png" alt="Placeholder Image">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello, I'm a comp sci student trying to get an internship so I can get some more professional experience. </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links"onclick="opentab('education')">Education</p>
+                    
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>FrontEnd Development using both React, HTML and CSS. .</li>
+                            <li><span>Data Visualization</span><br>I can make pretty cool dashboards with Tableau and PowerBI.</li>
+                            <li><span>DataBase Management</span><br>Database Management using SQL.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021 - 2022</span><br>The Great Lakes College of Toronto</li>
+                            <li><span>2022 - 2026 (hopefully)</span><br>Trent University</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----------services--------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2> Web Development </h2>
+                <p> I specialize in creating dynamic and responsive user interfaces using React, HTML, and CSS.</p>
+                <a href="#"></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-camera-retro"></i>
+                <h2> Data Visualization </h2>
+                <p>I excel at creating impressive and interactive dashboards using Tableau and PowerBI, transforming data into insightful visualizations.</p>
+                <a href="#"></a>
+            </div>
+            <div>
+                <i class="fa-solid fa-database"></i>
+                <h2> DataBase Management </h2>
+                <p> I manage and query databases using SQL for efficient data handling. </p>
+                <a href="#"></a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio Section -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/portfolio 2ndss.png">
+                <div class="layer">
+                    <h3>HTML Portfolio Website</h3>
+                    <p>It's the website you're scrolling on right now.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/ai bot ss.png">
+                <div class="layer">
+                    <h3>Lekan AI ChatBot</h3>
+                    <p>Built an AI chatbot using Google's gemini. </p>
+                    <a href="https://lekanlawal1.github.io/lekan-ai/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/tableau 2ndss.png">
+                <div class="layer">
+                    <h3>Tableau EV dashboard </h3>
+                    <p>Created dashboard using data from electric vehicle sales in the United States.</p>
+                    <a href="https://public.tableau.com/app/profile/lekan.lawal6977/viz/E-VehicleWorkbook/EVDashboard?publish=yes"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn"> See more</a>
+    </div>
+</div>
+
+<!-----------contact--------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> lekan1553@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +1 289 671 5308</p>
+                <div class="social-icons">
+                    
+                    
+                    <a href="https://www.linkedin.com/in/lekan-lawal-b6809a294/"><i class="fa-brands fa-linkedin"></i></a> 
+                </div>
+                <a href="Images/Lekan's Resume 2024 updated.pdf" download class="btn btn2">Download CV</a>
+            </div> 
+            <div class="contact-right">
+              <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name" required>
+                <input type="email" name="Email" placeholder="Your Email" required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+              </form>
+              <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p> Made by Lekan <i class="fa-solid fa-jedi"></i> </p>
+    </div>
+</div>
+
+</div>
+    <script> 
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+
+    function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+
+    // Ensuring the menu is hidden on larger screens
+    window.addEventListener('resize', function() {
+        if (window.innerWidth > 600) {
+            sidemenu.style.right = "-200px";
+        }
+    });
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwaxRKWmWJV3Yy3A9Oj6UUfg2Y9MpyyFambGBU0iZwovudm72rHELxqc_LxMENEDjQNpA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+  e.preventDefault();
+  fetch(scriptURL, {
+    method: 'POST',
+    body: new FormData(form)
+  })
+  .then(response => {
+    msg.innerHTML = "Thanks for getting in touch!! :)";
+    setTimeout(() => {
+      msg.innerHTML = "";
+    }, 5000);
+    form.reset();
+  })
+  .catch(error => console.error('Error!', error.message));
+});
+
+  </script>
+</body>
+</html>
